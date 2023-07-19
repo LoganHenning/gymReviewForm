@@ -1,0 +1,131 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Personal Training Review</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <div class="container">
+        <header>
+          <h1 id="title" class="text-center">T's Personal Training Review</h1>
+          <p id="description">Thanks for your review!</p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age <span class="clue">(optional)</span></label
+            >
+            <input
+              id="number"
+              type="number"
+              name="age"
+              placeholder="Age"
+              required
+              min="18"
+              max="120"
+            />
+          </div>
+          <div class="form-group">
+            <p>
+              How often do you currently exercise?
+              <select
+                id="dropdown"
+                name="frequency"
+                class="form-control"
+                required
+              >
+                <option value="none">I don't work out</option>
+                <option value="small">1-2 times a week</option>
+                <option value="medium">3-5 times a week</option>
+                <option value="large">6 or more times a week</option>
+              </select>
+            </p>
+          </div>
+
+          <div class="form-group">
+            <p>Have you worked with a personal trainer before?</p>
+            <label>
+              <input
+                type="radio"
+                name="prior-experience"
+                value="yes-experience"
+                class="input-radio"
+                checked
+              />
+              No
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="prior-experience"
+                value="no-experience"
+                class="input-radio"
+              />
+              Yes
+            </label>
+          </div>
+          <div class="form-group">
+            <p>
+              What is the reason you stopped using a personal trainer last time?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+              <input
+                type="checkbox"
+                value="expensive"
+                name="reason"
+                class="input-checkbox"
+              />
+              It was too expensive
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="results"
+                name="reason"
+                class="input-checkbox"
+              />
+              I didn't get the results I wanted
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="time"
+                name="reason"
+                class="input-checkbox"
+              />
+              It didn't work with my schedule
+            </label>
+          </div>
+          <div class="form-group">
+            <textarea></textarea>
+          </div>
+          <button id="submit">Submit</button>
+        </form>
+      </div>
+    </body>
+  </html></DOCTYPE
+>
